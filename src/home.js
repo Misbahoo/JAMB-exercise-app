@@ -5,6 +5,10 @@ import {subjects} from './subjectsList';
 
 const Home = () => {
 
+    const theMilli = 7200000;
+
+    localStorage.setItem('twoHours', JSON.stringify(theMilli));
+
     const [countSelection, setCountSelection] = useState({four : 0, count : ''});
     const [input, setInput] = useState([]);
 

@@ -1,41 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { participants } from './participants/participants';
 
 
 const LogIn = () => {
-
-      //       let milliSecs = 7200000;
-
-      //       const [theTimes, setTheTime] = useState({hours: 0, minutes:0, secs: 0})
-
-
-
-      //       useEffect(() => {
-
-
-      //             const interval = setInterval(() => {
-
-
-      //             milliSecs = milliSecs - 1000;
-      //         let theTime = {
-      //         hour: Math.floor((milliSecs / (1000 * 60 * 60)) % 24),
-      //         minute : Math.floor((milliSecs / 1000 / 60) % 60),
-      //         second : Math.floor((milliSecs / 1000) % 60)
-      //     }
-
-      //     const {hour, minute, second} = theTime;
-
-      //     setTheTime({...theTimes, hours: hour, minutes: minute, secs: second })
-
-
-      //     }, 1000)
-
-
-      //       }, theTimes)
-
-      //       const {hours, minutes, secs} = theTimes;
-
 
 
       const [formValue, setFormValue] = useState('');

@@ -6,7 +6,6 @@ MathsTwentyOneToThirty,
 MathsThirtyOneToForty
 } from '../theQuestionsSteps/mathsForm';
 
-
 import {
 EnglishOneToTen,
 EnglishElevenToTwenty,
@@ -25,7 +24,12 @@ export const Mathematics = ({location}) => {
         const {state} = location;
         const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am maths</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+             <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+        </PageTemplate>
      )
 }
 
@@ -43,12 +47,15 @@ export const English = () => {
         const nextStep = () => {
         const { step } = fields;
         setFields( {step : step + 1} );
+        window.scrollTo(0,0);
 
     }
 
      const prevStep = () => {
         const { step } = fields;
         setFields( {step: step - 1} );
+        window.scrollTo(0,0);
+
 
     }
     
@@ -115,7 +122,12 @@ export const Physics = ({location}) => {
      const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am physics</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -123,7 +135,12 @@ export const Chemistry = ({location}) => {
     const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am chemistry</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+               <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -132,7 +149,12 @@ export const Biology = () => {
     console.log(theValueOfSubjects);
     const subjects = JSON.parse(theValueOfSubjects);
      return (
-         <PageTemplate subjects={subjects}><div>I am biology</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -140,7 +162,12 @@ export const Geography = ({location}) => {
      const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am geography</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -148,7 +175,12 @@ export const Economics = ({location}) => {
    const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am economics</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -156,7 +188,12 @@ export const Government = ({location}) => {
     const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am government</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -229,7 +266,12 @@ export const Hausa = ({location}) => {
    const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am hausa</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -237,7 +279,12 @@ export const Islamic = ({location}) => {
     const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am islamic</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -245,7 +292,12 @@ export const EnglishLiterature = ({location}) => {
     const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am english literature</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }
 
@@ -253,6 +305,11 @@ export const CivilEducation = ({location}) => {
     const {state} = location;
     const {subjects} = state || {};
      return (
-         <PageTemplate subjects={subjects}><div>I am civil education</div></PageTemplate>
+         <PageTemplate subjects={subjects}>
+              <div className="flex flex-col gap-3 mx-auto w-3/4 h-full mt-5 p-3">
+                 <h1 className="text-3xl text-gray-600">This subject is not available yet.</h1>
+                 <h1 className="text-gray-600 text-2xl">Please try again later</h1>
+             </div>
+         </PageTemplate>
      )
 }

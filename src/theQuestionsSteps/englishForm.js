@@ -14,6 +14,8 @@ englishSection4
 } from '../questions/english';
 
 export const EnglishOneToTen = ({nextStep}) => {
+
+    let count = 0;
    
     const contee = (e) => {
         e.preventDefault();
@@ -32,7 +34,7 @@ export const EnglishOneToTen = ({nextStep}) => {
                 return (
                     <div>
 
-                    <h3><span className="font-bold">Q {index1+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
+                    <h3><span className="font-bold">Q {count = count+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
                     {item.options.map((item, index) => {
                         return (
                         <div className="mb-3">
@@ -62,6 +64,8 @@ export const EnglishOneToTen = ({nextStep}) => {
 
 
 export const EnglishElevenToTwenty = ({nextStep, prevStep}) => {
+
+    let count = 10;
    
     const contee = (e) => {
         e.preventDefault();
@@ -86,7 +90,7 @@ export const EnglishElevenToTwenty = ({nextStep, prevStep}) => {
             {englishElevenToTwenty.map((item, index1) => {
                 return (
                     <div>
-                    <h3><span className="font-bold">Q {index1+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
+                    <h3><span className="font-bold">Q {count = count+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
                     {item.options.map((item, index) => {
                         return (
                         <div>
@@ -125,6 +129,8 @@ export const EnglishElevenToTwenty = ({nextStep, prevStep}) => {
 
 export const EnglishTwentyOneToThirty = ({nextStep, prevStep}) => {
    
+
+    let count = 20;
     const contee = (e) => {
         e.preventDefault();
         nextStep();
@@ -146,7 +152,7 @@ export const EnglishTwentyOneToThirty = ({nextStep, prevStep}) => {
             {englishTwentyOneToThirty.map((item, index1) => {
                 return (
                     <div>
-                    <h3><span className="font-bold">Q {index1+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
+                    <h3><span className="font-bold">Q {count = count+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
                     {item.options.map((item, index) => {
                         return (
                         <div>
@@ -184,6 +190,8 @@ export const EnglishTwentyOneToThirty = ({nextStep, prevStep}) => {
 
 export const EnglishThirtyOneToForty = ({nextStep, prevStep}) => {
    
+
+    let count = 30;
     const contee = (e) => {
         e.preventDefault();
         nextStep();
@@ -197,7 +205,7 @@ export const EnglishThirtyOneToForty = ({nextStep, prevStep}) => {
     return (
 
 
-        <div className="bg-green-200 mx-auto my-10 w-2/4 p-10 shadow-lg shadow-green-500 rounded-lg">
+        <div className="mx-auto my-10 w-2/4 p-10 shadow-lg shadow-green-500 rounded-lg">
                         <div className="mb-5 p-3">
                             <p className="uppercase font-bold mb-3">{englishSection4.heading}</p>
                             <p className="italic">{englishSection4.subHeading}</p>
@@ -205,7 +213,7 @@ export const EnglishThirtyOneToForty = ({nextStep, prevStep}) => {
             {englishThirtyOneToForty.map((item, index1) => {
                 return (
                     <div>
-                    <h3><span className="font-bold">Q {index1+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
+                    <h3><span className="font-bold">Q {count = count+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
                     {item.options.map((item, index) => {
                         return (
                         <div>
@@ -243,6 +251,8 @@ export const EnglishThirtyOneToForty = ({nextStep, prevStep}) => {
 
 export const EnglishFortyOneToFifty = ({nextStep, prevStep}) => {
    
+
+    let count = 40;
     const contee = (e) => {
         e.preventDefault();
         nextStep();
@@ -264,7 +274,7 @@ export const EnglishFortyOneToFifty = ({nextStep, prevStep}) => {
             {englishFortyOneToFifty.map((item, index1) => {
                 return (
                     <div>
-                    <h3><span className="font-bold">Q {index1+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
+                    <h3><span className="font-bold">Q {count = count+1}:</span> {item.start} <span className="underline">{item.theWord}</span> {item.end}</h3>
                     {item.options.map((item, index) => {
                         return (
                         <div>
@@ -303,6 +313,7 @@ export const EnglishFortyOneToFifty = ({nextStep, prevStep}) => {
 
 export const EnglishFiftyOneToSixty = ({prevStep}) => {
    
+    let count = 50;
        const preStep = (e) => {
         e.preventDefault();
         prevStep();
@@ -315,7 +326,7 @@ export const EnglishFiftyOneToSixty = ({prevStep}) => {
             {englishFiftyOneToSixty.map((item, index1) => {
                 return (
                     <div>
-                    <h3><span className="font-bold">Q {index1+1}:</span> {item.start}</h3>
+                    <h3><span className="font-bold">Q {count = count+1}:</span> {item.start}</h3>
                     {item.options.map((item, index) => {
                         return (
                         <div>

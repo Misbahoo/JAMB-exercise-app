@@ -7,7 +7,6 @@ export const subjects = [
     "geography",
     "economics",
     "government",
-    "history",
     "hausa",
     "islamic",
     "english literature",
